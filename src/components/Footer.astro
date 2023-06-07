@@ -1,0 +1,62 @@
+---
+import Social from "./Social.astro";
+import LinkedIn from "../../public/images/linkedin.svg?raw";
+import GitHub from "../../public/images/github.svg?raw";
+import CodePen from "../../public/images/codepen.svg?raw";
+---
+
+<footer>
+  <div class="socials">
+    <Social
+      icon={LinkedIn}
+      platform="LinkedIn"
+      url="https://www.linkedin.com/in/christine-witt/"
+    />
+    <Social
+      icon={GitHub}
+      platform="GitHub"
+      url="https://github.com/christinewitt"
+    />
+    <Social
+      icon={CodePen}
+      platform="CodePen"
+      url="https://codepen.io/christinewitt"
+    />
+  </div>
+</footer>
+
+<style>
+  .socials {
+    align-items: center;
+    background-color: var(--key);
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  @media screen and (min-width: 768px) {
+    .socials {
+      align-items: center;
+      bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      left: 40px;
+      position: fixed;
+      right: auto;
+      width: 40px;
+      z-index: 10;
+    }
+    .socials::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: var(--white);
+    }
+  }
+</style>

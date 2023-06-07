@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/work-sans/worksans-variablefont_wght-webfont.woff2') format('woff2'),
+    url('/fonts/work-sans/worksans-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pridi';
+  src: url('/fonts/pridi/pridi-regular-webfont.woff2') format('woff2'),
+    url('/fonts/pridi/pridi-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biryani';
+  src: url('/fonts/biryani/biryani-regular-webfont.woff2') format('woff2'),
+    url('/fonts/biryani/biryani-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}

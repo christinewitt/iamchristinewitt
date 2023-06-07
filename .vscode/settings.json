@@ -1,0 +1,28 @@
+{
+  // first enable formatOnSave
+  "editor.formatOnSave": true,
+  // then, turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // run ESLint plugin to run on save
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint"
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#ff0180",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#ff0180",
+    "tab.activeBorder": "#ff0180",
+    "titleBar.activeBackground": "#ff0180",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#ff018099",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "sash.hoverBorder": "#ff0180",
+    "statusBarItem.remoteBackground": "#ff0180",
+    "statusBarItem.remoteForeground": "#e7e7e7"
+  },
+}

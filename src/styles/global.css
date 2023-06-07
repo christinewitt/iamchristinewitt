@@ -1,0 +1,86 @@
+@import url(./fonts.css);
+
+:root {
+  --cyan: #00ffff;
+  --key: #000000;
+  --magenta: #ff0180;
+  --navy: #0b032d;
+  --white: #ffffff;
+  --yellow: #ffff00;
+  --font-body: 'Biryani', "Trebuchet MS", Helvetica, sans-serif;
+  --font-heading: 'Work Sans', "Trebuchet MS", Helvetica, sans-serif;
+  --font-subheading: 'Pridi', Georgia, serif;
+}
+
+@media (color-gamut: p3) {
+  :root {
+    --cyan: oklch(90.54% 0.15455001106436891 194.76894793196382);
+    --magenta: oklch(64.53% 0.292 2.47);
+    --yellow: oklch(96.8% 0.21100590772552355 109.76923207652125);
+  }
+}
+
+::selection {
+  background: #ffff00;
+  color: black;
+}
+
+html {
+  background-color: var(--key);
+  color: var(--white);
+  font-family: var(--font-body);
+
+  -webkit-scrollbar-width: thin;
+  -moz-scrollbar-width: thin;
+  -ms-scrollbar-width: thin;
+  scrollbar-width: thin;
+  -webkit-scrollbar-color: var(--cyan) var(--key);
+  -moz-scrollbar-color: var(--cyan) var(--key);
+  -ms-scrollbar-color: var(--cyan) var(--key);
+  scrollbar-color: var(--cyan) var(--key);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--key);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--cyan);
+  border-radius: 6px;
+  border: 3px solid var(--key);
+}
+
+main {
+  margin: 0px auto;
+  max-width: 1600px;
+  padding: 50px 50px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0px 100px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  main {
+    padding: 0px 150px;
+  }
+}
+
+.highlight {
+  color: var(--magenta);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+.subheading {
+  font-family: var(--font-subheading);
+}
