@@ -3,10 +3,16 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Christine Witt">
-  <h1>Hello, I am <span class="highlight">Christine Witt</span>.</h1>
-  <p>
-    Thanks for stopping by! I’m a Full-Stack JavaScript Developer from the
-    Midwest with 10+ years of experience. I have a penchant for front-end
-    development.
-  </p>
+  <div class="welcome">
+    <h1>Hello, I am <span class="highlight">Christine Witt</span>.</h1>
+    <p>
+      Thanks for stopping by! I started coding with MySpace, and I've come a long way since table based layouts and autoplaying emo songs. Now I am a Full-Stack JavaScript Developer with 10+ years of experience and a penchant for front-end development.
+    </p>
+  </div>
 </Layout>
+
+<style>
+  .welcome {
+    max-width: 500px;
+  }
+</style>
