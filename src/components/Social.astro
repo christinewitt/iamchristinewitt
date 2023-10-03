@@ -7,10 +7,14 @@ const { icon, platform, url } = Astro.props;
 <style>
   a {
     color: var(--white);
-    padding: 10px;
+    padding: 10px 10px 0 10px;
   }
   a:hover {
     color: var(--magenta);
+  }
+  a:focus {
+    color: var(--magenta);
+    outline: 2px dotted var(--magenta);
   }
   svg {
     height: 20px;

@@ -5,7 +5,7 @@
   --key: #000000;
   --magenta: #ff0180;
   --navy: #0b032d;
-  --white: #ffffff;
+  --white: #dbdbdb;
   --yellow: #ffff00;
   --font-body: 'Biryani', "Trebuchet MS", Helvetica, sans-serif;
   --font-heading: 'Work Sans', "Trebuchet MS", Helvetica, sans-serif;
@@ -40,6 +40,14 @@ html {
   scrollbar-color: var(--cyan) var(--key);
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  min-height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -55,9 +63,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-  margin: 0px auto;
-  max-width: 1600px;
-  padding: 50px 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 30px 15px 30px;
 }
 
 @media screen and (min-width: 768px) {
